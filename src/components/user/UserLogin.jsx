@@ -20,7 +20,7 @@ export default function UserLogin() {
       const token = responseBody.data.token;
       setToken(token);
       await navigate({
-        pathname: "dashboard/contacts"
+        pathname: "/dashboard/contacts"
       });
     } else {
         await alertError(responseBody.errors);

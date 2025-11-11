@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffectOnce, useLocalStorage } from "react-use";
-import { userDetail, userUpdatePassword, userUpdateProfile } from "../../../../belajar-reactjs-contact-management/src/lib/api/UserApi";
-import { alertError, alertSuccess } from "../../../../belajar-reactjs-contact-management/src/lib/alert";
+import { userDetail, userUpdatePassword, userUpdateProfile } from "../../lib/api/userApi.js";
+import { alertError, alertSuccess } from "../../lib/alert/alert";
 
 export default function UserProfile() {
   const [name, setName] = useState("");
